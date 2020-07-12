@@ -1,0 +1,42 @@
+﻿@model LabNet.Models.Emotion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Emotion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Face.FaceID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Face.FaceID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Score)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmotionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmotionType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmotionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
